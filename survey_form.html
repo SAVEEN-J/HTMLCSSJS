@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/HTMLCSSJS/bootstrapStyle/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            left: -10000px;
+            overflow: hidden;
+        }
+        .control, fieldset {
+            margin: 6px 0;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            vertical-align: top;
+        }
+        .star {
+            color: red;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: rgb(224, 221, 227);
+        }
+
+        .table {
+            text-align: center;
+        }
+
+        tbody td {
+            text-align: center;
+        }
+
+        tbody td:first-child {
+            text-align: left;
+        }
+    </style>
+    <title>FORM</title>
+</head>
+<body>
+
+<form>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="Fnameid">Name<span class="star">*</span></label>
+                    <input type="text" name="FirstName" class="form-control" id="Fnameid" required>
+                    <label for="Firstnameid" style="font-size: small;">First</label>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="Lastnameid"></label>
+                    <input type="text" name="LastName" class="form-control" id="Lastnameid" required>
+                    <label for="Lastnameid" style="font-size: small;">last</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="mailid">Email<span class="star">*</span></label>
+            <input type="email" name="mail" class="form-control" id="mailid" required>
+        </div>
+        <div class="form-group">
+            <h5>Your Experience<span class="star">*</span></h5>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+        <div class="form-group">
+            <small>Overall, how would you rate your experience with us?</small>
+        </div>
+    </div>
+
+    <div class="container mt-1">
+        <h4>How satisfied are you with<span class="star">*</span></h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <td></td>
+                <td class="center">Very Unsatisfied</td>
+                <td class="center">Unsatisfied</td>
+                <td class="center">Neutral</td>
+                <td class="center">Satisfied</td>
+                <td class="center">Very Satisfied</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-left">Purchase</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td class="text-left">Service</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td class="text-left">Company Overall</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mt-1">
+        <h4>How likely are you to<span class="star">*</span></h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <td></td>
+                <td class="center">Very Unlikely</td>
+                <td class="center">Unlikely</td>
+                <td class="center">Neutral</td>
+                <td class="center">Likely</td>
+                <td class="center">Very likely</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-left">Buy from us again</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td class="text-left">Recommend our product to others</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td class="text-left">Recommend our company to others</td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+                <td><input type="radio"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h6>Additional comments or suggestions</h6>
+        <textarea class="form-control" style="width: 100%; height: 100px;"></textarea><br><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</body>
+</html>
